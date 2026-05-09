@@ -1,79 +1,49 @@
-export default function MiniMarketCozumel() {
-  const whatsappLink = "https://wa.me/529871114841?text=Hola%20quiero%20hacer%20un%20pedido%20del%20Mini%20Market";
-
-  const categories = [
-    {
-      title: "Bebidas Frías",
-      items: ["Agua", "Coca-Cola", "Electrolit", "Red Bull", "Gatorade"],
-    },
-    {
-      title: "Snacks",
-      items: ["Takis", "Doritos", "Cacahuates", "Gomitas", "Chocolates"],
-    },
-    {
-      title: "Paddle Essentials",
-      items: ["Grips", "Pelotas", "Barras Protein", "Toallas"],
-    },
-  ];
-
+export default function Page() {
   return (
-    <div className="min-h-screen bg-neutral-100 p-6 flex items-center justify-center">
-      <div className="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden">
-        <div className="bg-black text-white p-6 text-center">
-          <h1 className="text-3xl font-bold tracking-wide">MINI MARKET</h1>
-          <p className="text-sm mt-2 opacity-80">Snacks • Bebidas • Paddle Essentials</p>
-        </div>
+    <main style={{
+      minHeight: '100vh',
+      background: '#f5f5f5',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '20px'
+    }}>
+      <div style={{
+        background: 'white',
+        padding: '30px',
+        borderRadius: '20px',
+        maxWidth: '400px',
+        width: '100%',
+        textAlign: 'center',
+        boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+      }}>
+        <h1 style={{ fontSize: '32px', marginBottom: '10px' }}>
+          MINI MARKET
+        </h1>
 
-        <div className="p-6 space-y-6">
-          <div className="bg-neutral-100 rounded-2xl p-4 text-center border">
-            <p className="font-semibold text-lg">¿No quieres levantarte?</p>
-            <p className="text-sm text-neutral-600 mt-1">
-              Escanea y pide directo a tu mesa.
-            </p>
-          </div>
+        <p style={{ marginBottom: '20px' }}>
+          Snacks • Bebidas • Paddle Essentials
+        </p>
 
-          <div className="space-y-4">
-            {categories.map((category) => (
-              <div key={category.title} className="border rounded-2xl p-4">
-                <h2 className="font-bold text-lg mb-2">{category.title}</h2>
-                <div className="flex flex-wrap gap-2">
-                  {category.items.map((item) => (
-                    <span
-                      key={item}
-                      className="bg-neutral-200 px-3 py-1 rounded-full text-sm"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+        <a
+          href="https://wa.me/529871114841"
+          style={{
+            display: 'block',
+            background: '#25D366',
+            color: 'white',
+            padding: '15px',
+            borderRadius: '12px',
+            textDecoration: 'none',
+            fontWeight: 'bold'
+          }}
+        >
+          Pedir por WhatsApp
+        </a>
 
-          <div className="bg-yellow-50 border border-yellow-200 rounded-2xl p-4 text-sm text-center">
-            <p className="font-semibold">Importante</p>
-            <p className="text-neutral-700 mt-1">
-              Solo productos del Mini Market.
-            </p>
-            <p className="text-neutral-700">
-              Food trucks y barra manejan pedidos por separado.
-            </p>
-          </div>
-
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full bg-green-500 hover:bg-green-600 transition text-white text-center font-bold py-4 rounded-2xl text-lg shadow-lg"
-          >
-            Pedir por WhatsApp
-          </a>
-
-          <div className="text-center text-xs text-neutral-500">
-            Horario: 8:00 AM – 3:00 AM
-          </div>
-        </div>
+        <p style={{ marginTop: '20px', fontSize: '14px', color: '#666' }}>
+          Solo productos del Mini Market
+        </p>
       </div>
-    </div>
-  );
+    </main>
+  )
 }
