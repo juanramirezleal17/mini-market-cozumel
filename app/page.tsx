@@ -23,7 +23,7 @@ export default function Page() {
           marginBottom: '10px',
           fontWeight: 'bold'
         }}>
-          🥤 MINI MARKET
+          🥤 MINI MARKET LA PALAPITA
         </h1>
 
         <p style={{
