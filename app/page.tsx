@@ -42,7 +42,7 @@ export default function Page() {
         </p>
 
         <a
-          href="https://wa.me/529871114841?text=Hola%20quiero%20hacer%20un%20pedido"
+          href="https://wa.me/529871154893?text=Hola%20quiero%20hacer%20un%20pedido"
           target="_blank"
           rel="noopener noreferrer"
           style={{
