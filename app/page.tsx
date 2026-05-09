@@ -6,70 +6,124 @@ export default function Page() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: '20px'
+      padding: '20px',
+      fontFamily: 'sans-serif'
     }}>
       <div style={{
         background: 'white',
-        padding: '30px',
-        borderRadius: '20px',
+        padding: '25px',
+        borderRadius: '24px',
         maxWidth: '400px',
         width: '100%',
         textAlign: 'center',
-        boxShadow: '0 15px 40px rgba(0,0,0,0.2)'
+        boxShadow: '0 20px 50px rgba(0,0,0,0.25)'
       }}>
         
         <h1 style={{
-          fontSize: '28px',
-          marginBottom: '10px',
-          fontWeight: 'bold'
+          fontSize: '26px',
+          marginBottom: '5px',
+          fontWeight: '800'
         }}>
-          🥤 MINI MARKET LA PALAPITA
+          🍻 NO TE LEVANTES
         </h1>
 
         <p style={{
-          fontSize: '16px',
-          marginBottom: '15px'
+          fontSize: '18px',
+          fontWeight: '600',
+          marginBottom: '10px'
+        }}>
+          Mini Market La Palapita 🏝️
+        </p>
+
+        <p style={{
+          fontSize: '14px',
+          marginBottom: '15px',
+          color: '#444'
         }}>
           Snacks • Bebidas • Paddle Essentials
         </p>
 
         <p style={{
           fontSize: '14px',
-          marginBottom: '25px',
-          color: '#555'
+          marginBottom: '20px',
+          color: '#333'
         }}>
-          ⚡ Pide directo a tu mesa
+          ⚡ Te lo llevamos hasta tu mesa o cancha
         </p>
 
+        {/* IMÁGENES */}
+        <div style={{
+          display: 'flex',
+          gap: '10px',
+          marginBottom: '20px',
+          justifyContent: 'center'
+        }}>
+          <img src="https://images.unsplash.com/photo-1598514982841-6d9c8f62c4c3" style={{width: '80px', borderRadius: '12px'}} />
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" style={{width: '80px', borderRadius: '12px'}} />
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" style={{width: '80px', borderRadius: '12px'}} />
+        </div>
+
+        <div style={{
+          fontSize: '14px',
+          marginBottom: '25px',
+          color: '#333'
+        }}>
+          🥤 Bebidas frías • 🍫 Snacks • ⚡ Energéticas
+        </div>
+
+        {/* BOTÓN ÚNICO */}
         <a
-          href="https://wa.me/529871154893?text=Hola%20quiero%20hacer%20un%20pedido"
+          href="https://wa.me/529871154893?text=Hola%20quiero%20pedir%20%F0%9F%91%8B%0AMesa%20o%20Cancha%3A%0AProductos%3A"
           target="_blank"
           rel="noopener noreferrer"
           style={{
             display: 'block',
             background: '#25D366',
             color: 'white',
-            padding: '15px',
-            borderRadius: '12px',
+            padding: '18px',
+            borderRadius: '16px',
             textDecoration: 'none',
             fontWeight: 'bold',
-            fontSize: '16px',
-            boxShadow: '0 5px 15px rgba(0,0,0,0.2)',
-            transition: 'transform 0.2s ease'
+            fontSize: '17px',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+            animation: 'pulse 1.5s infinite',
+            transition: 'transform 0.15s ease'
           }}
+          onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.96)'}
+          onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
         >
-          💬 Ordena Aquí
+          🛒 PEDIR AHORA
         </a>
 
         <p style={{
-          marginTop: '20px',
+          marginTop: '15px',
           fontSize: '13px',
-          color: '#777'
+          color: '#666'
+        }}>
+          Entrega rápida en palapa y canchas ⚡
+        </p>
+
+        <p style={{
+          marginTop: '10px',
+          fontSize: '12px',
+          color: '#999'
         }}>
           Solo productos del Mini Market
         </p>
 
       </div>
+
+      {/* ANIMACIÓN */}
+      <style>
+        {`
+          @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+          }
+        `}
+      </style>
+
     </main>
   )
 }
