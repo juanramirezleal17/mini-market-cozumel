@@ -24,7 +24,7 @@ export default function Page() {
           marginBottom: '5px',
           fontWeight: '800'
         }}>
-          🍻 NO TE LEVANTES
+          🍻 NO TE LEVANTES!
         </h1>
 
         <p style={{
