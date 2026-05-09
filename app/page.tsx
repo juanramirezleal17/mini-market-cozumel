@@ -58,7 +58,7 @@ export default function Page() {
             transition: 'transform 0.2s ease'
           }}
         >
-          💬 Pedir por WhatsApp
+          💬 Ordena Aquí
         </a>
 
         <p style={{
