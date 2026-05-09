@@ -1,5 +1,5 @@
 export default function MiniMarketCozumel() {
-  const whatsappLink = "https://wa.me/5219999999999?text=Hola%20quiero%20hacer%20un%20pedido%20del%20Mini%20Market";
+  const whatsappLink = "https://wa.me/529871114841?text=Hola%20quiero%20hacer%20un%20pedido%20del%20Mini%20Market";
 
   const categories = [
     {
