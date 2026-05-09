@@ -1,5 +1,5 @@
 export default function Page() {
-  return (
+  return ( 
     <main style={{
       minHeight: '100vh',
       background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
